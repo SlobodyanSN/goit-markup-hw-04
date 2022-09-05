@@ -126,13 +126,19 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
-.contacts-icon {
-  fill: var(--main-font-color);
-}
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
 }
+.contacts-icon {
+  fill: var(--main-font-color);
+}
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+  fill: var(--accent-color);
+}
+
 /*--------------- hero---------------------- */
 .hero {
   max-width: 1600px;
@@ -304,6 +310,52 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+}
+.socials-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--accent-font-color);
+}
+/* ----------------------clients------------------------------ */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--secondary-font-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 /* ------------------------footer--------------------------- */
 .footer {
@@ -355,13 +407,19 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-font-color);
-  padding-left: 12px;
+
   margin-top: 12px;
 }
 .join .socials-link {
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+}
+.join .socials-link:hover,
+.join .socials-link:focus {
+  background-color: var(--accent-color);
+}
+.address-icon {
+  fill: var(--accent-font-color);
 }
 
 /* ---------------------------portfolio---------------------------------- */
